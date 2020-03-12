@@ -1,68 +1,9 @@
 ---
-title: "State of Art"
+title: "<h style='font-size: xxx-large;'> Dynamic parameters for independent speaker speech recognition engine </h>"
 author: SALGADO URIBE Ximena
 date: March 13, 2020
 theme: white
 ---
-<!--
-<script type=	"text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js">
-
-var url = 'https://' + 'cdn.rawgit.com/' + 'anumat/IPAjs/master/'  
-MathJax.Ajax.config.path["ipa"] = '.';
-
-  MathJax.Hub.Config({
-  extensions: ["tex2jax.js", "[ipa]/ipa.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-  tex2jax: {inlineMath: [['$','$']]}  
-  });
-
-</script>
-<script type="text/x-mathjax-config"></script>
-
-
-[link](https://epfl.ch)
-
-	*italic*
-
-**bold**
-
-![Example image](media/epfl-logo.png)
-
-* Unordered list
-* ...
-
-1. Ordered list
-2. ... 
-
-> * Incremental list
-* (also works for ordered lists)
-
-## {.slide: data-background="media/background.gif"}
- 
-## "Dynamic parameter for independent speaker speech recognition engine" 
-1. Speech fundamentals
-2. Static vs. Dynamic parameters 
-3. Dynamic  features for indedepent speaker
-4. State of the art 
-<img src="media/title.jpg" alt="drawing" width="large" />
-
-## 1.3. Formants 
-
-<img src="media/c.png" alt="drawing" width="750"  />
-
-## {.slide: data-background="media/wave.gif"}
-Dynamic Aspects: Nonlinearity and context dependent
- <img src="media/dynamic.jpg" alt="drawing" width="50%"  />
-
- <img src="media/wave.gif" alt="drawing" width="40%" style="border-style: none; box-shadow: none;" /> -->
--->
-
-
-## <h style="font-size: xxx-large;">"Dynamic parameter for independent speaker speech recognition engine"</h> 
-
-<p>SALGADO URIBE Ximena </p>
-<p>March 13,2020</p>
-
 
 #  <h style="font-size: 85%;"> 1. Speech Fundamentals </h>
 
@@ -220,3 +161,64 @@ thomas kaldi, rentre les angles mais les angles ne peuvent pas utiliser directem
 <!--esseyer de trouver un autre parametre en combinant rapport de vitesse  et angle -->
 
 <!-- <span>\$\\ipa{a}\$</span> -->
+
+<!--
+<script type=	"text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js">
+
+var url = 'https://' + 'cdn.rawgit.com/' + 'anumat/IPAjs/master/'  
+MathJax.Ajax.config.path["ipa"] = '.';
+
+  MathJax.Hub.Config({
+  extensions: ["tex2jax.js", "[ipa]/ipa.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+  tex2jax: {inlineMath: [['$','$']]}  
+  });
+
+</script>
+<script type="text/x-mathjax-config"></script>
+
+
+[link](https://epfl.ch)
+
+	*italic*
+
+**bold**
+
+![Example image](media/epfl-logo.png)
+
+* Unordered list
+* ...
+
+1. Ordered list
+2. ... 
+
+> * Incremental list
+* (also works for ordered lists)
+
+## {.slide: data-background="media/background.gif"}
+ 
+## "Dynamic parameter for independent speaker speech recognition engine" 
+1. Speech fundamentals
+2. Static vs. Dynamic parameters 
+3. Dynamic  features for indedepent speaker
+4. State of the art 
+<img src="media/title.jpg" alt="drawing" width="large" />
+
+## 1.3. Formants 
+
+<img src="media/c.png" alt="drawing" width="750"  />
+
+## {.slide: data-background="media/wave.gif"}
+Dynamic Aspects: Nonlinearity and context dependent
+ <img src="media/dynamic.jpg" alt="drawing" width="50%"  />
+
+ <img src="media/wave.gif" alt="drawing" width="40%" style="border-style: none; box-shadow: none;" /> 
+
+
+## <h style="font-size: xxx-large;">"Dynamic parameter for independent speaker speech recognition engine"</h> 
+
+<p>SALGADO URIBE Ximena </p>
+<p>March 13,2020</p>
+-->
+
+
