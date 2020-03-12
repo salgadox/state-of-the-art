@@ -215,7 +215,7 @@ Dynamic Aspects: Nonlinearity and context dependent
 thomas kaldi, rentre les angles mais les angles ne peuvent pas utiliser directement, trop bruit qui vient de la complexité de calcul</p>-->
  
 
-## 3.4  <p>What's next?</p>  <p>Why</p> 
+## 3.4  What's next? & Why?  
 
 <!--esseyer de trouver un autre parametre en combinant rapport de vitesse  et angle -->
 
