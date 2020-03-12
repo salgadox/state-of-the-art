@@ -55,25 +55,9 @@ MathJax.Ajax.config.path["ipa"] = '.';
 
 </script>
 <script type="text/x-mathjax-config"></script>
--->
-</section>
-<section id="dynamic-parameter-for-independent-speaker-speech-recognition-engine" class="slide level2">
-<h2>“Dynamic parameter for independent speaker speech recognition engine”</h2>
-<ol type="1">
-<li>Speech fundamentals</li>
-<li>Static vs. Dynamic parameters</li>
-<li>Dynamic features for indedepent speaker</li>
-<li>State of the art <!--<img src="media/title.jpg" alt="drawing" width="large" />--></li>
-</ol>
-</section>
-<section><section id="speech-fundamentals" class="title-slide slide level1"><h1>1. Speech Fundamentals</h1></section><section id="speech-production" class="slide level2">
-<h2>1.1. Speech Production</h2>
-<p><img src="media/speechprod.png" alt="drawing" width="600" style="float: left;"/></p>
-<p><img src="media/talking.gif" alt="drawing" width="30%" style="float: right;" /></p>
-<p style="font-size: x-large; ">
-Speech is the result of combination of articulatory gestures and energy.
-</p>
-<!--[link](https://epfl.ch)
+
+
+[link](https://epfl.ch)
 
     *italic*
 
@@ -90,27 +74,62 @@ Speech is the result of combination of articulatory gestures and energy.
 > * Incremental list
 * (also works for ordered lists)
 
-
 ## {.slide: data-background="media/background.gif"}
--->
+ 
+## "Dynamic parameter for independent speaker speech recognition engine" 
+1. Speech fundamentals
+2. Static vs. Dynamic parameters 
+3. Dynamic  features for indedepent speaker
+4. State of the art 
+<img src="media/title.jpg" alt="drawing" width="large" />
+
+## 1.3. Formants 
+
+<img src="media/c.png" alt="drawing" width="750"  />
+
+## {.slide: data-background="media/wave.gif"}
+Dynamic Aspects: Nonlinearity and context dependent
+ <img src="media/dynamic.jpg" alt="drawing" width="50%"  />
+
+ <img src="media/wave.gif" alt="drawing" width="40%" style="border-style: none; box-shadow: none;" /> -->
+<p>–&gt;</p>
+</section>
+<section id="dynamic-parameter-for-independent-speaker-speech-recognition-engine" class="slide level2">
+<h2><h style="font-size: xxx-large;">“Dynamic parameter for independent speaker speech recognition engine”</h></h2>
+<p>
+SALGADO URIBE Ximena
+</p>
+<p>
+March 13,2020
+</p>
+</section>
+<section><section id="speech-fundamentals" class="title-slide slide level1"><h1><h style="font-size: 85%;"> 1. Speech Fundamentals </h></h1></section><section id="speech-production" class="slide level2">
+<h2>1.1. Speech Production</h2>
+<p><img src="media/speechprod.png" alt="drawing" width="600" style="float: left;"/></p>
+<img src="media/talking.gif" alt="drawing" width="30%" style="float: right;" />
+<p style="font-size: small; float: right;">
+J. Frahm et C. Rotte: IRM German speech production
+</p>
+<p style="font-size: x-large; ">
+Speech is the result of combination of articulatory gestures and energy.
+</p>
 </section><section id="source-filter-theory" class="slide level2">
 <h2>1.2. Source Filter theory</h2>
 <figure>
-<img data-src="media/SourceFilter.jpg" alt="G. Fant: Acoustic theory of Speech Production" /><figcaption><em>G. Fant: Acoustic theory of Speech Production</em></figcaption>
+<img data-src="media/SourceFilter.jpg" alt="G. Fant 1960: Acoustic theory of Speech Production" /><figcaption><em>G. Fant 1960: Acoustic theory of Speech Production</em></figcaption>
 </figure>
 </section><section id="formants" class="slide level2">
 <h2>1.3. Formants</h2>
-<!--<img src="media/talking.gif" alt="drawing" width="30%" style="float: right;" />-->
-<img src="media/v.gif" alt="drawing" width="52%" style="float: left;" /> <img src="media/triangle.png" alt="drawing" width="46%" style="float: right;" />
+<p><img src="media/v.gif" alt="drawing" width="52%" style="float: left;" /> <img src="media/triangle.png" alt="drawing" width="46%" style="float: right;" /></p>
 <p style="font-size: x-large; ">
 Strange (1989) proved that with only the first 2 formants, vowel identification can be achieve
 </p>
-<!---## 1.3. Formants 
-
-<img src="media/c.png" alt="drawing" width="750"  />
--->
 </section></section>
-<section><section id="static-vs.dynamic" class="title-slide slide level1"><h1>2. Static vs. Dynamic</h1></section><section id="static-speech-features" class="slide level2">
+<section><section id="static-vs.dynamic" class="title-slide slide level1"><h1><h style="font-size: 85%;"> 2. Static vs. Dynamic </h></h1></section><section id="speech-recognition-system" class="slide level2">
+<h2>2.0 Speech Recognition System</h2>
+<p><img src="media/reco.jpg" alt="drawing" width="750"/></p>
+<!--chemin de base de la recco deep learning ou HMM nous utiliser KALDI en version deep learning (info de kaldi que thomas a utiliser) la base de donne est braf du français. -->
+</section><section id="static-speech-features" class="slide level2">
 <h2>2.1 Static Speech Features</h2>
 <ul style="font-size:70%;">
 <li>
@@ -120,37 +139,49 @@ Linear Predictive Coding (LPC): Based on a mathematical approximation of the voc
 Mel Frequency Cepstrum Coeficient (CFCC): Based on human hearing perceptions.
 </li>
 </ul>
-<p><img src="media/MFCC.jpg" alt="drawing" width="750" /></p>
-<!--
-## {.slide: data-background="media/wave.gif"}
-Dynamic Aspects: Nonlinearity and context dependent
- <img src="media/dynamic.jpg" alt="drawing" width="50%"  />-->
-</section><section id="dynamic-aspect" class="slide level2">
-<h2>2.2 Dynamic aspect</h2>
-<ul style="font-size:70%;">
+<p><img src="media/MFCC.jpg" alt="drawing" width="750"/></p>
+</section><section id="mfcc-vs.variability" class="slide level2">
+<h2>2.2 MFCC vs. Variability</h2>
+<ul style="font-size:60%;">
 <li>
-The conventional linear approaches neglets dynamic structures known to be present in speech.
+Enviromental variability: caused by noisy surroindings, microphone characteristics.
 </li>
-<!--<img src="media/wave.gif" alt="drawing" width="40%" style="border-style: none; box-shadow: none;" /> -->
 <li>
-Context dependent
+Physiological variability: eg. female vs male vocal tract.
+</li>
+<li>
+Coarticulation: speech sound influeced by a preceding or a following speech sound.
 </li>
 </ul>
-<p><img src="media/dynamic.jpg" alt="drawing" width="90%"  /></p>
+<p><img src="media/fm1.png" alt="drawing" width="55%" style="float: left;"/></p>
+<img src="media/fm.jpg" alt="drawing" width="40%" style="float: right; " />
+<p style="font-size: small; float: left;">
+Watt &amp; Fabricius 2002: Comparison of FLEECE ~ TRAP ~ GOOSE for female and male speakers.
+</p>
+<!--<## 2.3 Dynamic aspect
+<ul style="font-size:70%;">
+ <li> The conventional linear approaches neglets dynamic structures known to be present in speech.  </li>
+ 
+ <li> Context dependent</li>
+</ul>
+<img src="media/dynamic.jpg" alt="drawing" width="90%"  />-->
 </section><section id="dynamic-of-consonant" class="slide level2">
 <h2>2.3 Dynamic of Consonant</h2>
-<ul style="font-size:70%;">
+<ul style="font-size:60%;">
 <li>
-Tuller, Case, Ding &amp; Kelso 1994: Stay-Say continuum
+Tuller, Case, Ding &amp; Kelso 1994: English “Stay-Say” continuum
 </li>
 <li>
-Nguyen, Lancia, Bergounioux, Wauquier-Gravelines &amp; Tuller 2005: Cepe-Steppe continuum.
+Nguyen, et al. 2005: French “Cepe-Steppe” continuum.
 </li>
 </ul>
-<p><img src="media/staySay.jpg" alt="drawing" width="730"  /></p>
+<img src="media/staySay.jpg" alt="drawing" width="730"  />
+<p style="font-size: small; float: center;">
+Praat recording to illustrate “Stay-Say” continuum.
+</p>
 </section><section id="dynamic-of-vowel" class="slide level2">
 <h2>2.4 Dynamic of Vowel</h2>
-<ul style="font-size:70%;">
+<ul style="font-size:60%;">
 <li>
 Peterson and Barney 1952, &amp; Hillebrand 1995: Formants frequencies over time.
 </li>
@@ -158,35 +189,34 @@ Peterson and Barney 1952, &amp; Hillebrand 1995: Formants frequencies over time.
 Strange 1989: Perception of silent-center syllables .
 </li>
 <li>
-R. Carré &amp; Mrayatri: natural vocalic trajectories follow specific paths .
+R. Carré &amp; Mrayatri 1991: natural vocalic trajectories follow specific paths .
 </li>
 </ul>
-<p><img src="media/CarreMrayatri.jpg" alt="drawing" width="730"  /></p>
+<img src="media/CarreMrayatri.jpg" alt="drawing" width="730"  />
+<p style="font-size: small; float: center;">
+R.Carré et Mrayatri 1991. Vocalic trajectories (a-V2) in the F1-F2 plane
+</p>
 </section><section id="dynamic-of-vowel-1" class="slide level2">
 <h2>2.4 Dynamic of Vowel</h2>
-<ul style="font-size:70%;">
+<ul style="font-size:60%;">
 <li>
-Tran 2006 &amp; R. Carré 2007: Vowel indentification using trajectories’ rates and directions.
+R. Carré 2007: Vowel indentification using trajectories’ rates and directions.
 </li>
 <li>
 R. Carré 2009: Vowel identification using knowledge of the point of departure and trajectory direction.
 </li>
 </ul>
-<p><img src="media/Carre2.jpg" alt="drawing" width="850"  /></p>
+<img src="media/aTraj.png" alt="drawing" width="49%" style="float: right;"/> <img src="media/aiTraj.png" alt="drawing" width="48%" style="float: left; " />
+<p style="font-size: small; float: right;">
+R.Carre 2007 F1 rates in time domain for in [ai] trace. (right)
+</p>
+<p style="font-size: small; float: left;">
+R.Carré &amp; P. Divenyi 2000: temporal representation of [ai] trajectory. (left)
+</p>
 </section></section>
-<section><section id="dynamic-features-for-indedepent-speaker" class="title-slide slide level1"><h1>3. Dynamic features for indedepent speaker</h1></section><section id="variability" class="slide level2">
-<h2>3.1 variability</h2>
-<!--* Variablitiy need to be taking seriously.-->
-<ul style="font-size:70%;">
-<li>
-Most speech recognition engines use spectral measurements of the speech signal based on absolute frequency measurements
-</li>
-</ul>
-<p><img src="media/fm1.png" alt="drawing" width="55%" style="float: left;"/></p>
-<p><img src="media/fm.jpg" alt="drawing" width="40%" style="float: right; " /></p>
-</section><section id="sscf" class="slide level2">
-<h2>3.2 SSCF</h2>
-<ul style="font-size:70%;">
+<section><section id="dynamic-features-for-indedepent-speaker" class="title-slide slide level1"><h1><h style="font-size: 85%;"> 3. Dynamic features for indedepent speaker </h></h1></section><section id="sscf" class="slide level2">
+<h2>3.1 SSCF</h2>
+<ul style="font-size:60%;">
 <li>
 K.K. Paliwal 1998: proposed spectral subband controids as a new features and use them as supplement to cepstral features for SR.
 </li>
@@ -194,32 +224,74 @@ K.K. Paliwal 1998: proposed spectral subband controids as a new features and use
 N. Poh et al 2003: suggest that SSCs are more robust to additive noise.
 </li>
 </ul>
-<p><img src="media/SSCF.jpg" alt="drawing" width="40%" style="float: left;"/></p>
-<p><img src="media/SCFF_acrosstime.png" alt="drawing" width="58%" style="float: right; " /></p>
-</section></section>
-<section><section id="state-of-the-art" class="title-slide slide level1"><h1>4. State of the art</h1></section><section id="modeling-dynamic-features" class="slide level2">
-<h2>4.1 Modeling Dynamic features</h2>
-Tran 2006:
+<img src="media/SSCF.jpg" alt="drawing" width="38%" style="float: left;"/> <img src="media/SCFF_acrosstime.png" alt="drawing" width="55%" style="float: right; " />
+<p style="font-size: small; float: left;">
+Kua et al. 2010: SSCF representation.
+</p>
+<p style="font-size: small; float: right;">
+N. Poh et al 2003: Conventional spectrogram overlaid witth SSCF.
+</p>
+</section><section id="modeling-dynamic-features" class="slide level2">
+<h2><h style="font-size: 95%;"> 3.2 Modeling Dynamic features </h></h2>
 <ul style="font-size:70%;">
 <li>
-Confirms that SSCF parameters can replace formants frequencies and act as pseudo-formants.
-</li>
-<li>
-Proposed a new method to model acoustic and dynamic features (SSCF).
+Tran 2006: Confirms that SSCF parameters can replace formants frequencies and act as pseudo-formants.
 </li>
 </ul>
-<p><img src="media/Tran.jpg" alt="drawing" width="70%"/></p>
+<img src="media/Tran.jpg" alt="drawing" width="99%"/>
+<p style="font-size: medium; float: center;">
+Tran 2006. Comparison between SSCF features and formant frequencies on natural Vietnamese signal.
+</p>
 </section><section id="modeling-dynamic-features-1" class="slide level2">
-<h2>4.1 Modeling Dynamic features</h2>
+<h2><h style="font-size: 95%;"> 3.2 Modeling Dynamic features </h></h2>
 <ul style="font-size:70%;">
+<li>
+Tran 2006: Proposed a new method to model acoustic and dynamic features (SSCF).
+</li>
 <li>
 Phuong 2018: Proposed an improvement in SSCF angles calculation
 </li>
+</ul>
+<p><img src="media/triangle2.jpg" alt="drawing" width="49%" style="float: left;"/></p>
+<img src="media/TranAngle.jpg" alt="drawing" width="49%" style="float: right;"/>
+<p style="font-size: medium; float: left;">
+R.Carré et al. 2004. Vocalic trajectories in the F1-F2 plane
+</p>
+</section><section id="modeling-dynamic-features-2" class="slide level2">
+<h2><h style="font-size: 95%;"> 3.2 Modeling Dynamic features </h></h2>
+<p style="font-size:xx-large; large; ">
+Results showed that SSCF angles have similar values for both male and female speakers.
+</p>
+<p><img src="media/male.jpg" alt="drawing" width="49%" style="float: left; "/> <img src="media/female.jpg" alt="drawing" width="49%" style="float: right;"/></p>
+</section><section id="modeling-dynamic-features-3" class="slide level2">
+<h2><h style="font-size: 95%;"> 3.2 Modeling Dynamic features </h></h2>
+<p style="font-size: x-large";>Results showed that:</p>
+<ul>
+<li style="font-size:x-large; ">
+in both languages the SSCF angle12 was more or less the same.
+</li>
+<li style="font-size:x-large; ">
+different values for SSCF angle23 and SSCF angle34
+</li>
+<img src="media/french-viet34.jpg" alt="drawing" width="48%" style="float: left;"/> <img src="media/french-viet12.jpg" alt="drawing" width="48%" style="float: right;"/>
+<ul>
+</section><section id="travail-a-faire" class="slide level2">
+<h2>3.3 travail a faire</h2>
+<ul style="font-size:70%;">
 <li>
-Debeuret 2019: Continue with Tran &amp; Phoung ’s work comparing different speech recognition methods
+Debeuret 2019: Continue with Tran &amp; Phoung ’s work comparing different speech recognition methods.
 </li>
 </ul>
-<p><img src="media/TranAngle.jpg" alt="drawing" width="60%"/> <!--<p style="font-size: large; ">Results showed that SSCF angles have similar values for both male and female speakers.  <p style="font-size: x-large; ">--></p>
+<p><img src="media/thomas.png" alt="drawing" width="80%" /> <!--<p> conclusion: utiliser parametres remplacer mfcc a la entre du sisteme de reco 
+thomas kaldi, rentre les angles mais les angles ne peuvent pas utiliser directement, trop bruit qui vient de la complexité de calcul</p>--></p>
+## 3.4
+<p>
+What’s next?
+</p>
+<p>
+Why
+</p>
+<!--esseyer de trouver un autre parametre en combinant rapport de vitesse  et angle -->
 <!-- <span>\$\\ipa{a}\$</span> -->
 </section></section>
     </div>
