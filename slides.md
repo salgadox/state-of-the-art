@@ -78,7 +78,7 @@ theme: white
 
 ## 2.4 Dynamic of Vowel 
 <ul style="font-size:60%;">
- <li> Peterson and Barney 1952, & Hillebrand 1995: Formants frequencies over time. </li>
+ <!--<li> Peterson and Barney 1952, & Hillebrand 1995: Formants frequencies over time. </li>-->
  <li> Strange 1989: Perception of silent-center syllables .</li>
   <li> R. Carré & Mrayatri 1991: natural vocalic trajectories follow specific paths .</li>
 </ul>
